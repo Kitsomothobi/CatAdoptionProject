@@ -1,0 +1,44 @@
+@import "../../index.scss";
+
+.catslist{
+    // 70% of the actual screen
+    width: 70vw;
+    // centers the div in the center of the page
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+// Media queries allow us to style certain elements, at a particular screen size
+
+    // for screens bigger than 768px
+    @media screen and (min-width: 768px){
+        // we want to
+    .catslist{
+        display: grid;
+        // create 2 columns of equal size
+        grid-template-columns: 1fr 1fr;
+        // with a gap of 1.5rem
+        grid-column-gap: 1.5rem;
+        // adjusting the width on larger screens
+        width: 90vw;
+    }
+
+}
+
+
+@media screen and (min-width: 992px){
+    .catslist{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width: 1140px){
+    .catslist{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1.5rem;
+    }
+}
